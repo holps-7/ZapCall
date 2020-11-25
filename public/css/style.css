@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:600|Lato:400&display=swap");
+
+body {
+  background-color: #000;
+  content: "";
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  min-height: 625px;
+  max-height: 100%;
+  background-image: url(../img/illustration-section-01.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  left: 50%;
+  top: 0;
+  background-position: center top;
+  transform: translate(-50%);
+}
+.containers {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 300px);
+}
+
+.container {
+    display: flex;
+}
+
+.vid {
+    flex: 0 1 auto;
+    height: 400px;
+    padding: 10px;
+}
+
+.settings {
+    background-color: #376df9;
+    background: linear-gradient(100deg, #376df9 0, #ff5fa0 75%, #ffc55a 100%);
+    border: none;
+    overflow: visible;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    border-radius: 2px;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 12px 31px;
+    height: 48px;
+    color: white;
+    margin: 5px; 
+}
+
+h1 {
+    padding-left: 100px;
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+#tools {
+    padding-left: 30%;
+    bottom: -50px;
+    position: fixed;
+    display:block;
+}

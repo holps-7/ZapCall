@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>ZapCall</title>
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <script lang="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="/simple-peer/simplepeer.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="/"><img src="img/logo.svg" alt="Neon" width="32" height="32" /></a>
+        </h1>
+    </header>
+    <div id="videos" class="container">
+        <video id="localVideo" class="vid" autoplay muted></video>
+    </div>
+    <br />
+    <div id="tools">
+        <button id="switchButton" class="settings" onclick="switchMedia()">Switch
+            Camera</button>
+        <button id="muteButton" class="settings" onclick="toggleMute()">Unmuted</button>
+        <button id="vidButton" class="settings" onclick="toggleVid()">Video Enabled</button>
+        <button id="shareButton" class="settings" onclick="setScreen()">Share Screen</button>
+    </div>
+</body>
+<footer>
+    <script src='/js/main.js' lang="text/javascript"></script>
+</footer>
+
+</html>
